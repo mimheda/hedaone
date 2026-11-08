@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "اولِ نوشتن؛ در آغوش کشیدن نقص‌ها",
+    "date": "۱۴۰۵-۰۵-۱۱",
+    "category": "از نوشتن",
+    "excerpt": "می‌توانی نوشتن را آغاز کنی حتی با وجود فاصله‌ها و ناهمخوانی‌ها...",
+    "avatar": "img/avatar-write.jpg",
+    "coverImage": "img/cover-write.jpg",
+    "link": "post-write.html",
+    "content": "متن کامل پست در اینجا قرار می‌گیرد..."
+  },
+  {
+    "id": 2,
+    "title": "دومِ نوشتن؛ رد پای روزمرگی‌ها",
+    "date": "۱۴۰۵-۰۴-۳۰",
+    "category": "لحظه‌نگار",
+    "excerpt": "هر چه به انتهای ماجرا نزدیک‌تر می‌شوم، درمی‌یابم ثبت احساسات...",
+    "avatar": "img/avatar-daily.jpg",
+    "coverImage": "img/cover-daily.jpg",
+    "link": "post-daily.html",
+    "content": "متن کامل پست در اینجا قرار می‌گیرد..."
+  }
+]

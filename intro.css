@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.intro-body {
+  font-family: "Vazirmatn", Tahoma, sans-serif;
+  min-height: 100vh;
+  background-color: #0b1120;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+}
+
+/* کانتینر اصلی کارت‌ها */
+.landing-container {
+  display: flex;
+  width: 93vw;
+  height: 82vh;
+  gap: 16px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 28px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.channel-box {
+  flex: 1;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1), transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(11, 17, 32, 0.65);
+  transition: background-color 0.5s ease;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 1.2rem;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.content h2 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+.content p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #e2e8f0;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: all 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.channel-box:hover {
+  flex: 2.1;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.channel-box:hover .overlay {
+  background-color: rgba(11, 17, 32, 0.22);
+}
+
+.channel-box:hover .content {
+  transform: scale(1.04);
+}
+
+.channel-box:hover .content p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* استایل فوتر صفحه فرود */
+.intro-footer {
+  width: 100%;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 20px;
+}
+
+.intro-footer-content {
+  width: 93vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.intro-footer-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.intro-footer-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.intro-footer-links a:hover {
+  color: #38bdf8;
+}
+
+/* واکنش‌گرایی در نمایشگرهای کوچک */
+@media (max-width: 820px) {
+  .landing-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 85vh;
+  }
+  .channel-box {
+    min-height: 150px;
+  }
+  .channel-box:hover {
+    flex: 1.5;
+    transform: translateY(0);
+  }
+  .intro-footer-content {
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+  }
+}

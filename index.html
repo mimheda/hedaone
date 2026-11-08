@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سید محمدرضا هدایتی درو – وبلاگ شخصی</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- هدر و نوار ناوبری -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="brand">
+        <a href="#" class="brand-title">Mohammadreza <span>Hedayati</span></a>
+        <span class="brand-subtitle">شرح حال زیستن و خودشناسی</span>
+      </div>
+      <nav class="site-nav" aria-label="منوی اصلی">
+        <a href="intro.html" class="nav-link active">خانه</a>
+        <a href="#about" class="nav-link">درباره من</a>
+        <a href="#writing" class="nav-link">یادداشت های نیمه‌شب</a>
+        <a href="#art" class="nav-link">هِداگرافی</a>
+        <a href="#friends" class="nav-link">دوستان من</a>
+        <a href="#contact" class="nav-link">ارتباط</a>
+      </nav>
+    </div>
+  </header>
+<!-- بنر ورودی اصلی وبلاگ هدا بتا -->
+  <section class="blog-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>شرحِ حالِ زیستن</h1>
+      <p>از سفیدیِ قند تا روپوشِ سفید | روایت‌هایی از بالین، تأملات و خودشناسی</p>
+      <a href="#posts-section" class="hero-scroll-btn">مشاهده یادداشت‌ها ↓</a>
+    </div>
+  </section>
+
+  <!-- بقیه کانتینر main-layout در ادامه قرار می‌گیرد -->
+  <div class="container main-layout" id="posts-section">
+    ...
+    
+  <!-- چیدمان اصلی دوسطونی ای -->
+  <div class="container main-layout">
+
+    <!-- ستون مطالب اصلی -->
+    <main class="content-area">
+
+      <!-- کارت معرفی و پیشگفتار -->
+      <section class="intro-card" id="home">
+        <div class="intro-image-wrapper">
+          <!-- مسیر نسبی عکس؛ فایل را در پوشه img کنار سایت قرار دهید -->
+          <img src="../NBLM/img/Hedabeta1.jpg" alt="سید محمدرضا هدایتی" class="profile-img" onerror="this.src='https://via.placeholder.com/130'">
+        </div>
+        <div class="intro-text">
+          <h1>شرح حال زیستن</h1>
+          <p>
+            اینجا از تجربه‌هایی می‌نویسم؛ که شاید تلخ باشند؛ شاید شیرین. 🕊<br>
+            در تلاش برای رسیدن به خودشناسی و شاید نوری بر زخم‌های تاریکِ آدم‌ها...
+          </p>
+          <a href="#intro-post" class="highlight-link">پیشنهاد: مطالعه پیشگفتار و آغاز ماجرا ←</a>
+        </div>
+      </section>
+
+      <!-- جریان یادداشت‌ها -->
+      <section class="posts-feed" aria-label="یادداشت‌ها">
+        
+        
+        <!-- یادداشت ۱ -->
+        <article class="post-card" id="intro-post">
+          <header class="post-header">
+            <span class="post-category">از نوشتن</span>
+            <time class="post-date" datetime="2026-08-01">۱۴۰۵-۰۵-۱۱</time>
+          </header>
+          <h2 class="post-title"><a href="#">اولِ نوشتن؛ در آغوش کشیدن نقص‌ها</a></h2>
+          <p class="post-excerpt">
+            می‌توانی نوشتن را آغاز کنی حتی با وجود فاصله‌ها و ناهمخوانی‌ها. بیا و زندگی را با نقص‌هایت زندگی کن؛ کلمات جاری می‌شوند وقتی قضاوت‌ها به خاموشی بگراید...
+          </p>
+          <div class="post-footer">
+            <a href="#" class="read-more">مطالعه نوشتار »</a>
+          </div>
+        </article>
+
+        <!-- یادداشت ۲ -->
+        <article class="post-card">
+          <header class="post-header">
+            <span class="post-category">لحظه‌نگار</span>
+            <time class="post-date" datetime="2026-07-20">۱۴۰۵-۰۴-۳۰</time>
+          </header>
+          <h2 class="post-title"><a href="#">دومِ نوشتن؛ رد پای روزمرگی‌ها</a></h2>
+          <p class="post-excerpt">
+            هر چه به انتهای ماجرا نزدیک‌تر می‌شوم، درمی‌یابم ثبت احساسات تنها راه بقای جزئیات شیرین و تلخ زندگی در هیاهوی جهان پیرامون است...
+          </p>
+          <div class="post-footer">
+            <a href="#" class="read-more">مطالعه نوشتار »</a>
+          </div>
+          
+        </article>
+
+        <!-- صفحه‌بندی سبک و سریع -->
+        <nav class="pagination" aria-label="صفحه‌بندی یادداشت‌ها">
+          <span class="page-current">برگه ۱</span>
+          <a href="#" class="page-link">برگه ۲</a>
+          <a href="#" class="page-link">برگه ۳</a>
+          <a href="#" class="page-link">بعدی »</a>
+        </nav>
+
+      </section>
+
+      <!-- بخش اشتراک و ارتباط سریع -->
+      <section class="newsletter-card" id="contact">
+        <h3>همراهی با نوشته‌ها</h3>
+        <p>اگر مایلید یادداشت‌های تازه مستقیماً برای شما ارسال شود، نام و ایمیلتان را بنویسید:</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('با تشکر، ثبت شد!');">
+          <input class="input-field" type="text" placeholder="نام شما" required>
+          <input class="input-field" type="email" placeholder="ایمیل شما" required>
+          <button class="btn-submit" type="submit">ثبت نشانی</button>
+        </form>
+      </section>
+
+    </main>
+
+    <!-- ستون کناری (Sidebar) -->
+    <aside class="sidebar">
+
+      <div class="widget search-widget">
+        <label for="search" class="widget-title">جستجو در نوشته‌ها</label>
+        <input type="search" id="search" placeholder="آنچه نادیدنی‌ست ..." class="search-input">
+      </div>
+
+      <div class="widget">
+        <h4 class="widget-title">یادداشت‌های اخیر</h4>
+        <ul class="widget-list">
+          <li><a href="#">اولِ نوشتن؛ در آغوش کشیدن نقص‌ها</a></li>
+          <li><a href="#">دومِ نوشتن؛ رد پای روزمرگی</a></li>
+          <li><a href="#">آغاز ماجرا و نقطه سرخط</a></li>
+        </ul>
+      </div>
+
+      <div class="widget">
+        <h4 class="widget-title">دسته‌بندی مطالب</h4>
+        <ul class="widget-list">
+          <li><a href="#">از نوشتن <span>(۴)</span></a></li>
+          <li><a href="#">هداگرافیِ<span>(۲)</span></a></li>
+          <li><a href="#">شرح حال زیستن <span>(۵)</span></a></li>
+          <li><a href="#">دوستان من <span>(۳)</span></a></li>
+        </ul>
+      </div>
+
+      <div class="widget">
+        <h4 class="widget-title">شبکه‌های ارتباطی</h4>
+        <div class="social-links">
+          <a href="#" class="social-pill">تلگرام</a>
+          <a href="https://www.linkedin.com/in/drsmrhd/" class="social-pill">لینکدین</a>
+          <a href="mailto:contact@hedabeta.ir" class="social-pill">ایمیل</a>
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <!-- فوتر -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© ۱۴۰۵ کلیه حقوق برای سید محمدرضا هدایتی درو محفوظ است.</p>
+      <a href="#home" class="back-to-top">بازگشت به بالا ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
